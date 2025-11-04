@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Votos Bajos</h1>
+    <ul>
+        {% for voto in votaciones %}
+            <li>{{ voto.fecha_votacion }} - {{ voto.cliente.nombre }} votó por {{ voto.movil.modelo }} con una puntuación de {{ voto.puntuacion }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

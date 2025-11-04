@@ -7,5 +7,11 @@
 </head>
 <body>
     <h1>Este es nuestro home</h1>
+    <p><a href="{% url 'ultimo_voto' 51 %}">Último voto del móvil</a></p>
+    <p><a href="{% url 'votos_bajos' 19 %}">Votos bajos de un cliente</a></p>
+    <p><a href="{% url 'clientes_sin_votos' %}">Clientes sin votos</a></p>
+    <p><a href="{% url 'cuentas_bancarias' %}">Cuentas bancarias</a></p>
+    <p><a href="{% url 'votos_altos_con_cuenta' %}">Votos altos con cuenta</a></p>
+    <p><a href="{% url 'modelos_media_alta' %}">Modelos con media de votación alta</a></p>
 </body>
 </html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Clientes sin Votos</h1>
+    <ul>
+        {% for cliente in clientes %}
+            <h1>{{ cliente.nombre }}</h1>
+            <li>{{ cliente.email }}</li>
+            <li>{{ cliente.banco }}</li>
+            <li>{{ cliente.votaciones_movil }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
