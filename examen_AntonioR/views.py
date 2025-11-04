@@ -189,6 +189,8 @@ def buscar_fabricante(request):
 def videojuegos_sin_plataforma(request):
     videojuegos = (
         Videojuego.objects
+        .select_related('estudio_desarrollo')
+        .prefetch_related('plataformas')
         .filter(plataformas__isnull=True)
         .order_by('-ventas_estimadas')
         .all()
@@ -216,6 +218,8 @@ def analisis_estudio(request, estudio_id):
 def videojuegos_estudio_media(request, estudio_id):
     videojuegos = (
         Videojuego.objects
+        .select_related('estudio_desarrollo')
+        .prefetch_related('plataformas')
         .filter(estudio_desarrollo_id=estudio_id)
         .annotate(media_puntuacion=Avg('analisis_videojuego__puntuacion'))
         .filter(media_puntuacion__gt=7.5)
@@ -224,7 +228,24 @@ def videojuegos_estudio_media(request, estudio_id):
 
     return render(request, 'examen_AntonioR/videojuegos_estudio_media.html', {'videojuegos': videojuegos})
 
+# Crea los Modelos, Urls y QuerySets correspondientes, para que puedas obtener el último análisis de un videojuego que pertenezcan a un crítico en concreto, 
+# el fabricante de una plataforma concreta y la sede de un estudio de desarrollo en concreto. 
 
+def mostrar_ultimo_analisis(request, critico, fabricante, pais_sede):
+    ultimo_analisis = (
+        Analisis.objects
+        .select_related('videojuego', 'videojuego__estudio_desarrollo')
+        .prefetch_related('videojuego__plataformas')
+        .filter(
+            videojuego__analisis_videojuego__critico=critico,
+            videojuego__plataformas__fabricante=fabricante,
+            videojuego__estudio_desarrollo__sede__pais=pais_sede
+        )
+        .order_by('-fecha')
+        .first()
+    )
+
+    return render(request, 'examen_AntonioR/mostrar_ultimo_analisis.html', {'ultimo_analisis': ultimo_analisis})
 
 def mi_error_404(request, exception=None):
     return render(request, 'examen_AntonioR/errores/404.html', None, None, 404)
