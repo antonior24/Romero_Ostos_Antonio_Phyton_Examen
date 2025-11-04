@@ -141,6 +141,40 @@ def mostrar_nuevos(request):
 
     return render(request, 'examen_AntonioR/mostrar_nuevos.html', {'videojuegos': videos})
 
+#SELECT 
+ #   V.*,E.*,VP.*,P.*
+#FROM 
+ #   videojuego V
+#INNER JOIN 
+   # videojuego_plataformas VP ON V.id = VP.videojuego_id
+#INNER JOIN 
+  #  plataforma P ON VP.plataforma_id = P.id
+#INNER JOIN
+  #  analisis A ON V.id = A.videojuego_id
+#INNER JOIN 
+  #  estudio E ON V.estudio_desarrollo_id = E.id
+#LEFT JOIN
+ #   sede S ON E.id = S.estudio_id
+#WHERE 
+#    P.fabricante LIKE 'Sony' 
+ #   OR p.nombre LIKE ‘%Play Station%’ 
+ #   AND A.puntuacion > 75
+#LIMIT 3
+
+def buscar_fabricante(request):
+    videojuegos = (
+        Videojuego.objects
+        .select_related('estudio_desarrollo')
+        .prefetch_related('plataformas')
+        .filter(
+            Q(plataformas__nombre__icontains='Play Station') |
+            Q(plataformas__fabricante__icontains='Sony'),
+            analisis_videojuego__puntuacion__gt=75
+        )
+        .all()[:3] # Esto indica que solo queremos los primeros 3 resultados
+    )
+
+    return render(request, 'examen_AntonioR/buscar_fabricante.html', {'videojuegos': videojuegos})
 
 
 def mi_error_404(request, exception=None):
