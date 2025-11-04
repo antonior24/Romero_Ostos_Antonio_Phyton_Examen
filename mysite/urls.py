@@ -23,3 +23,8 @@ urlpatterns = [
     path('__debug__/', include('debug_toolbar.urls')),
     path('', include('examen_AntonioR.urls')),
 ]
+
+handler404 = 'examen_AntonioR.views.mi_error_404'
+handler500 = 'examen_AntonioR.views.mi_error_500'
+handler403 = 'examen_AntonioR.views.mi_error_403'
+handler400 = 'examen_AntonioR.views.mi_error_400'

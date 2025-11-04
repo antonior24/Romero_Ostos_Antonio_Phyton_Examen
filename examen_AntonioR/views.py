@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import Movil, Votaciones, Cliente, Banco
 from django.db.models import Avg
+from django.db.models import Q
+from django.views.defaults import page_not_found
 
 # Create your views here.
 def home(request):
@@ -106,3 +108,15 @@ def modelos_media_alta(request):
     #''')
 
     return render(request, 'examen_AntonioR/modelos_media_alta.html', {'modelos': modelos})
+
+def mi_error_404(request, exception=None):
+    return render(request, 'examen_AntonioR/errores/404.html', None, None, 404)
+
+def mi_error_500(request):
+    return render(request, 'examen_AntonioR/errores/500.html', None, None, 500)
+
+def mi_error_403(request, exception=None):
+    return render(request, 'examen_AntonioR/errores/403.html', None, None, 403)
+
+def mi_error_400(request, exception=None):
+    return render(request, 'examen_AntonioR/errores/400.html', None, None, 400)
