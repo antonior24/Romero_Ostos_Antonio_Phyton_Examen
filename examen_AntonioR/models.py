@@ -127,6 +127,7 @@ class Analisis(models.Model):
     videojuego = models.ForeignKey(Videojuego, on_delete=models.CASCADE, related_name='analisis_videojuego')
     puntuacion = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(100)])
     review = models.TextField()
+    anyo_publicacion = models.DateField( null=True, blank=True)
 
     def __str__(self):
         return f"Análisis de {self.videojuego.titulo} - Puntuación: {self.puntuacion}"

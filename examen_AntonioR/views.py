@@ -196,6 +196,21 @@ def videojuegos_sin_plataforma(request):
 
     return render(request, 'examen_AntonioR/videojuegos_sin_plataforma.html', {'videojuegos': videojuegos})
 
+# Crea los Modelos, Urls y QuerySets correspondientes, para que puedas obtener todos los Estudios que tengan videojuegos con una análisis en un año en concreto 
+# ordenados por puntuación del análisis de mayor a menor. En esta querySet si os salen duplicados, debéis usar distinct() después de construir la querySet 
+# completa para evitarlos.
+
+def analisis_estudio(request, estudio_id):
+    analisis = (
+        Analisis.objects
+        .select_related('videojuego', 'videojuego__estudio_desarrollo')
+        .filter(videojuego__estudio_desarrollo__id=estudio_id)
+        .order_by('-puntuacion')
+        .all()
+    )
+
+    return render(request, 'examen_AntonioR/analisis_estudio.html', {'analisis': analisis})
+
 
 
 def mi_error_404(request, exception=None):
