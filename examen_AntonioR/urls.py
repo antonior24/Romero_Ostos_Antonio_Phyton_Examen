@@ -14,5 +14,5 @@ urlpatterns = [
     # Obtener todos los modelos principales que tengan una media de votaciones mayor del 2,5:
     path('modelos_media_alta/', views.modelos_media_alta, name='modelos_media_alta'),
     
-    
+    path('mostrar_nuevos/', views.mostrar_nuevos, name='mostrar_nuevos'),
 ]

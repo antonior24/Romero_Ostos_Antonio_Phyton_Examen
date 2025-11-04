@@ -109,6 +109,39 @@ def modelos_media_alta(request):
     
     return render(request, 'examen_AntonioR/modelos_media_alta.html', {'modelos': modelos})
 
+def mostrar_nuevos(request):
+    #    SELECT 
+    #    V.*,E.*,VP.*,P.*
+    #FROM 
+    #    videojuego V
+    #INNER JOIN 
+     #   estudio E ON V.estudio_desarrollo_id = E.id
+    #INNER JOIN 
+     #   sede S ON E.id = S.estudio_id
+    #LEFT JOIN 
+    #    videojuego_plataformas VP ON V.id = VP.videojuego_id
+    #LEFT JOIN
+    #    plataforma P ON VP.plataforma_id = P.id
+    #LEFT JOIN
+    #    analisis A ON V.id = A.videojuego_id
+    #WHERE 
+    #    V.titulo LIKE '%Fantasy%' 
+    #    AND S.pais LIKE '%Unidos%';
+    
+    videos = (
+        Videojuego.objects
+        .select_related('estudio_desarrollo')
+        .prefetch_related('plataformas')
+        .filter(
+            Q(titulo__icontains='Fantasy') &
+            Q(estudio_desarrollo__estudio_sedes__pais__icontains='Unidos')
+        )
+        .all()
+    )
+
+    return render(request, 'examen_AntonioR/mostrar_nuevos.html', {'videojuegos': videos})
+
+
 
 def mi_error_404(request, exception=None):
     return render(request, 'examen_AntonioR/errores/404.html', None, None, 404)
