@@ -52,3 +52,91 @@ class Votaciones(models.Model):
 
     def __str__(self):
         return f"Puntuación: {self.puntuacion}"
+    
+# Modelos de videojuegos
+
+class Plataforma(models.Model):
+    nombre = models.CharField(max_length=50)
+    Fabricante = [
+        ('Sony', 'Sony'),
+        ('Microsoft', 'Microsoft'),
+        ('Nintendo', 'Nintendo'),
+        ('PC', 'PC'),
+        ('Apple', 'Apple'),
+    ]
+    fabricante = models.CharField(max_length=50, choices=Fabricante, default='Estados Unidos')
+
+    def __str__(self):
+        return self.nombre
+    
+class Videojuego(models.Model):
+    titulo = models.CharField(max_length=100)
+    estudio_desarrollo = models.ForeignKey('Estudio', on_delete=models.CASCADE, related_name='estudio_videojuegos')
+    plataformas = models.ManyToManyField(Plataforma, through='VideojuegoPlataformas', related_name='videojuegos')
+    ventas_estimadas = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return self.titulo
+
+class Estudio(models.Model):
+    nombre = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.nombre
+
+class Sede(models.Model):
+    estudio = models.ForeignKey(Estudio, on_delete=models.CASCADE, related_name='estudio_sedes')
+    PAIS = [
+        ('Estados Unidos', 'Estados Unidos'),
+        ('Reino Unido', 'Reino Unido'),
+        ('Japón', 'Japón'),
+        ('Canadá', 'Canadá'),
+        ('Alemania', 'Alemania'),
+        ('España', 'España'),
+    ]
+    pais = models.CharField(max_length=50, choices=PAIS, default='Estados Unidos')
+
+class VideojuegoPlataformas(models.Model):
+    videojuego = models.ForeignKey(Videojuego, on_delete=models.CASCADE)
+    plataforma = models.ForeignKey(Plataforma, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.videojuego.titulo}"
+
+#SELECT 
+ #   V.*,E.*,VP.*,P.*
+#FROM 
+ #   videojuego V
+#INNER JOIN 
+   # videojuego_plataformas VP ON V.id = VP.videojuego_id
+#INNER JOIN 
+  #  plataforma P ON VP.plataforma_id = P.id
+#INNER JOIN
+  #  analisis A ON V.id = A.videojuego_id
+#INNER JOIN 
+  #  estudio E ON V.estudio_desarrollo_id = E.id
+#LEFT JOIN
+ #   sede S ON E.id = S.estudio_id
+#WHERE 
+#    P.fabricante LIKE 'Sony' 
+ #   OR p.nombre LIKE ‘%Play Station%’ 
+ #   AND A.puntuacion > 75
+#LIMIT 3
+
+class Analisis(models.Model):
+    videojuego = models.ForeignKey(Videojuego, on_delete=models.CASCADE, related_name='analisis_videojuego')
+    puntuacion = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(100)])
+    review = models.TextField()
+
+    def __str__(self):
+        return f"Análisis de {self.videojuego.titulo} - Puntuación: {self.puntuacion}"
+    
+#SELECT 
+#    V.*
+#FROM 
+#    videojuego V
+#LEFT JOIN 
+#    videojuego_plataformas VP ON V.id = VP.videojuego_id
+#WHERE 
+#    VP.id IS NULL
+#ORDER BY v.ventas_estimadas DESC

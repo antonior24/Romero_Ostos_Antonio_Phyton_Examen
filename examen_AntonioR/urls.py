@@ -13,4 +13,6 @@ urlpatterns = [
     path('votos_altos_con_cuenta/', views.votos_altos_con_cuenta, name='votos_altos_con_cuenta'),
     # Obtener todos los modelos principales que tengan una media de votaciones mayor del 2,5:
     path('modelos_media_alta/', views.modelos_media_alta, name='modelos_media_alta'),
+    
+    
 ]

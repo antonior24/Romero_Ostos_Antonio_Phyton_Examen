@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Movil, Votaciones, Cliente, Banco
+from .models import Movil, Votaciones, Cliente, Banco, Videojuego
 from django.db.models import Avg
 from django.db.models import Q
 from django.views.defaults import page_not_found
@@ -106,8 +106,9 @@ def modelos_media_alta(request):
         #GROUP BY m.id, m.modelo
         #HAVING AVG(v.puntuacion) > 2.5
     #''')
-
+    
     return render(request, 'examen_AntonioR/modelos_media_alta.html', {'modelos': modelos})
+
 
 def mi_error_404(request, exception=None):
     return render(request, 'examen_AntonioR/errores/404.html', None, None, 404)
