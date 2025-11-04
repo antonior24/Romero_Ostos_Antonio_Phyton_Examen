@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Movil, Votaciones, Cliente, Banco, Videojuego
+from .models import Movil, Votaciones, Cliente, Banco, Videojuego, Analisis
 from django.db.models import Avg
 from django.db.models import Q
 from django.views.defaults import page_not_found
@@ -175,6 +175,27 @@ def buscar_fabricante(request):
     )
 
     return render(request, 'examen_AntonioR/buscar_fabricante.html', {'videojuegos': videojuegos})
+
+#SELECT 
+#    V.*
+#FROM 
+#    videojuego V
+#LEFT JOIN 
+#    videojuego_plataformas VP ON V.id = VP.videojuego_id
+#WHERE 
+#    VP.id IS NULL
+#ORDER BY v.ventas_estimadas DESC
+
+def videojuegos_sin_plataforma(request):
+    videojuegos = (
+        Videojuego.objects
+        .filter(plataformas__isnull=True)
+        .order_by('-ventas_estimadas')
+        .all()
+    )
+
+    return render(request, 'examen_AntonioR/videojuegos_sin_plataforma.html', {'videojuegos': videojuegos})
+
 
 
 def mi_error_404(request, exception=None):
