@@ -3,11 +3,11 @@
     "model": "admin.logentry",
     "pk": 1,
     "fields": {
-        "action_time": "2025-11-02T20:38:13.315",
+        "action_time": "2025-11-04T10:33:19.831",
         "user": 1,
-        "content_type": 7,
+        "content_type": 8,
         "object_id": "1",
-        "object_repr": "Banco object (1)",
+        "object_repr": "Rockstar",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -16,11 +16,11 @@
     "model": "admin.logentry",
     "pk": 2,
     "fields": {
-        "action_time": "2025-11-02T20:38:36.452",
+        "action_time": "2025-11-04T10:33:31.550",
         "user": 1,
-        "content_type": 9,
+        "content_type": 10,
         "object_id": "1",
-        "object_repr": "Cliente object (1)",
+        "object_repr": "PlayStation",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -29,11 +29,11 @@
     "model": "admin.logentry",
     "pk": 3,
     "fields": {
-        "action_time": "2025-11-02T20:38:58.746",
+        "action_time": "2025-11-04T10:33:39.487",
         "user": 1,
-        "content_type": 8,
-        "object_id": "1",
-        "object_repr": "samsumg",
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Switch",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -42,11 +42,11 @@
     "model": "admin.logentry",
     "pk": 4,
     "fields": {
-        "action_time": "2025-11-02T20:40:00.241",
+        "action_time": "2025-11-04T10:33:46.376",
         "user": 1,
-        "content_type": 10,
+        "content_type": 13,
         "object_id": "1",
-        "object_repr": "s20 - samsumg",
+        "object_repr": "Sede object (1)",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -55,11 +55,154 @@
     "model": "admin.logentry",
     "pk": 5,
     "fields": {
-        "action_time": "2025-11-02T20:42:44.403",
+        "action_time": "2025-11-04T10:34:05.070",
         "user": 1,
-        "content_type": 11,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Sega",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-11-04T10:34:07.387",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Sede object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2025-11-04T10:34:48.824",
+        "user": 1,
+        "content_type": 14,
         "object_id": "1",
-        "object_repr": "Puntuación: 4",
+        "object_repr": "gta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2025-11-04T10:35:03.658",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Fantasy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-11-04T10:35:33.786",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Fantasy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-11-04T10:36:05.626",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "1",
+        "object_repr": "Análisis de gta - Puntuación: 92",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-11-04T10:36:25.101",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "Análisis de Fantasy - Puntuación: 90",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-11-04T10:49:57.525",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "Sede object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-11-04T10:50:25.510",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Fantasy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-11-04T11:00:33.978",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Epic Games",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-11-04T11:00:38.355",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "Rocket",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-11-04T11:00:49.813",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "3",
+        "object_repr": "Análisis de Rocket - Puntuación: 67",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -320,160 +463,376 @@
     "model": "auth.permission",
     "pk": 29,
     "fields": {
-        "name": "Can add marca",
+        "name": "Can add estudio",
         "content_type": 8,
-        "codename": "add_marca"
+        "codename": "add_estudio"
     }
 },
 {
     "model": "auth.permission",
     "pk": 30,
     "fields": {
-        "name": "Can change marca",
+        "name": "Can change estudio",
         "content_type": 8,
-        "codename": "change_marca"
+        "codename": "change_estudio"
     }
 },
 {
     "model": "auth.permission",
     "pk": 31,
     "fields": {
-        "name": "Can delete marca",
+        "name": "Can delete estudio",
         "content_type": 8,
-        "codename": "delete_marca"
+        "codename": "delete_estudio"
     }
 },
 {
     "model": "auth.permission",
     "pk": 32,
     "fields": {
-        "name": "Can view marca",
+        "name": "Can view estudio",
         "content_type": 8,
-        "codename": "view_marca"
+        "codename": "view_estudio"
     }
 },
 {
     "model": "auth.permission",
     "pk": 33,
     "fields": {
-        "name": "Can add cliente",
+        "name": "Can add marca",
         "content_type": 9,
-        "codename": "add_cliente"
+        "codename": "add_marca"
     }
 },
 {
     "model": "auth.permission",
     "pk": 34,
     "fields": {
-        "name": "Can change cliente",
+        "name": "Can change marca",
         "content_type": 9,
-        "codename": "change_cliente"
+        "codename": "change_marca"
     }
 },
 {
     "model": "auth.permission",
     "pk": 35,
     "fields": {
-        "name": "Can delete cliente",
+        "name": "Can delete marca",
         "content_type": 9,
-        "codename": "delete_cliente"
+        "codename": "delete_marca"
     }
 },
 {
     "model": "auth.permission",
     "pk": 36,
     "fields": {
-        "name": "Can view cliente",
+        "name": "Can view marca",
         "content_type": 9,
-        "codename": "view_cliente"
+        "codename": "view_marca"
     }
 },
 {
     "model": "auth.permission",
     "pk": 37,
     "fields": {
-        "name": "Can add movil",
+        "name": "Can add plataforma",
         "content_type": 10,
-        "codename": "add_movil"
+        "codename": "add_plataforma"
     }
 },
 {
     "model": "auth.permission",
     "pk": 38,
     "fields": {
-        "name": "Can change movil",
+        "name": "Can change plataforma",
         "content_type": 10,
-        "codename": "change_movil"
+        "codename": "change_plataforma"
     }
 },
 {
     "model": "auth.permission",
     "pk": 39,
     "fields": {
-        "name": "Can delete movil",
+        "name": "Can delete plataforma",
         "content_type": 10,
-        "codename": "delete_movil"
+        "codename": "delete_plataforma"
     }
 },
 {
     "model": "auth.permission",
     "pk": 40,
     "fields": {
-        "name": "Can view movil",
+        "name": "Can view plataforma",
         "content_type": 10,
-        "codename": "view_movil"
+        "codename": "view_plataforma"
     }
 },
 {
     "model": "auth.permission",
     "pk": 41,
     "fields": {
-        "name": "Can add votaciones",
+        "name": "Can add cliente",
         "content_type": 11,
-        "codename": "add_votaciones"
+        "codename": "add_cliente"
     }
 },
 {
     "model": "auth.permission",
     "pk": 42,
     "fields": {
-        "name": "Can change votaciones",
+        "name": "Can change cliente",
         "content_type": 11,
-        "codename": "change_votaciones"
+        "codename": "change_cliente"
     }
 },
 {
     "model": "auth.permission",
     "pk": 43,
     "fields": {
-        "name": "Can delete votaciones",
+        "name": "Can delete cliente",
         "content_type": 11,
-        "codename": "delete_votaciones"
+        "codename": "delete_cliente"
     }
 },
 {
     "model": "auth.permission",
     "pk": 44,
     "fields": {
-        "name": "Can view votaciones",
+        "name": "Can view cliente",
         "content_type": 11,
+        "codename": "view_cliente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add movil",
+        "content_type": 12,
+        "codename": "add_movil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change movil",
+        "content_type": 12,
+        "codename": "change_movil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete movil",
+        "content_type": 12,
+        "codename": "delete_movil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view movil",
+        "content_type": 12,
+        "codename": "view_movil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add sede",
+        "content_type": 13,
+        "codename": "add_sede"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change sede",
+        "content_type": 13,
+        "codename": "change_sede"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete sede",
+        "content_type": 13,
+        "codename": "delete_sede"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view sede",
+        "content_type": 13,
+        "codename": "view_sede"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add videojuego",
+        "content_type": 14,
+        "codename": "add_videojuego"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change videojuego",
+        "content_type": 14,
+        "codename": "change_videojuego"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete videojuego",
+        "content_type": 14,
+        "codename": "delete_videojuego"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view videojuego",
+        "content_type": 14,
+        "codename": "view_videojuego"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add videojuego plataformas",
+        "content_type": 15,
+        "codename": "add_videojuegoplataformas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change videojuego plataformas",
+        "content_type": 15,
+        "codename": "change_videojuegoplataformas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete videojuego plataformas",
+        "content_type": 15,
+        "codename": "delete_videojuegoplataformas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view videojuego plataformas",
+        "content_type": 15,
+        "codename": "view_videojuegoplataformas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add votaciones",
+        "content_type": 16,
+        "codename": "add_votaciones"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change votaciones",
+        "content_type": 16,
+        "codename": "change_votaciones"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete votaciones",
+        "content_type": 16,
+        "codename": "delete_votaciones"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view votaciones",
+        "content_type": 16,
         "codename": "view_votaciones"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add analisis",
+        "content_type": 17,
+        "codename": "add_analisis"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change analisis",
+        "content_type": 17,
+        "codename": "change_analisis"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete analisis",
+        "content_type": 17,
+        "codename": "delete_analisis"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view analisis",
+        "content_type": 17,
+        "codename": "view_analisis"
     }
 },
 {
     "model": "auth.user",
     "pk": 1,
     "fields": {
-        "password": "pbkdf2_sha256$870000$KcDaNVHN5dMW3ooVCVeVgC$88y8r7PqAs4kUbK7V5e0KFjgr64kJO+VOiI6WvPRJeA=",
-        "last_login": "2025-11-02T20:37:57.661",
+        "password": "pbkdf2_sha256$870000$xAKISF6HLoUIvV8Nkr6dXq$4De6Skm1Xl31EMpcyrJUlXPzXQ9bwVBAKApd7ZGM0QA=",
+        "last_login": "2025-11-04T10:33:01.790",
         "is_superuser": true,
-        "username": "antonio",
+        "username": "ant",
         "first_name": "",
         "last_name": "",
-        "email": "1@g.com",
+        "email": "1@gm.com",
         "is_staff": true,
         "is_active": true,
-        "date_joined": "2025-11-02T20:37:35.254",
+        "date_joined": "2025-11-04T10:32:30.861",
         "groups": [],
         "user_permissions": []
     }
@@ -539,7 +898,7 @@
     "pk": 8,
     "fields": {
         "app_label": "examen_AntonioR",
-        "model": "marca"
+        "model": "estudio"
     }
 },
 {
@@ -547,7 +906,7 @@
     "pk": 9,
     "fields": {
         "app_label": "examen_AntonioR",
-        "model": "cliente"
+        "model": "marca"
     }
 },
 {
@@ -555,7 +914,7 @@
     "pk": 10,
     "fields": {
         "app_label": "examen_AntonioR",
-        "model": "movil"
+        "model": "plataforma"
     }
 },
 {
@@ -563,601 +922,197 @@
     "pk": 11,
     "fields": {
         "app_label": "examen_AntonioR",
+        "model": "cliente"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "examen_AntonioR",
+        "model": "movil"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "examen_AntonioR",
+        "model": "sede"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "examen_AntonioR",
+        "model": "videojuego"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "examen_AntonioR",
+        "model": "videojuegoplataformas"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "examen_AntonioR",
         "model": "votaciones"
     }
 },
 {
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "examen_AntonioR",
+        "model": "analisis"
+    }
+},
+{
     "model": "sessions.session",
-    "pk": "o20astyscuh60hti3c3s2apdgsimkbx9",
+    "pk": "rti2mlbctzzlbqevhze5xqxikqusouwf",
     "fields": {
-        "session_data": ".eJxVjDsOwjAQBe_iGlnGH-xQ0nOGaNe7iwPIluKkQtwdIqWA9s3Me6kR1qWMa-d5nEid1VEdfjeE_OC6AbpDvTWdW13mCfWm6J12fW3Ez8vu_h0U6OVb5wQECAxwsmQlAWLwPnjDLkeDBiWhQEoSc0QYhC1hcIFZcHBkUb0_Mu06BQ:1vFdtl:asN1WgqW_Mc4bZD1GeG_dUXdVceJspdGOBsxA_7jNvY",
-        "expire_date": "2025-11-16T20:37:57.728"
+        "session_data": ".eJxVjEEOwiAQRe_C2hBIoTAu3XsGMgyDVA0kpV013t026UK3_733NxFwXUpYO89hSuIqtLj8bhHpxfUA6Yn10SS1usxTlIciT9rlvSV-307376BgL3vNVlkgigTZMxnWSBncoDgBZ8suaoMwwAg5Ko3srDVj1M6jV7tPWny-D1E4qQ:1vGDPR:QNwtpV5pe6U8AjwnakaWOI9wNOmkAje12CtrAQOeo6E",
+        "expire_date": "2025-11-18T10:33:01.810"
     }
 },
 {
-    "model": "examen_AntonioR.marca",
-    "pk": 36,
+    "model": "examen_AntonioR.plataforma",
+    "pk": 1,
     "fields": {
-        "nombre": "Juanita Colom Bueno S.A."
+        "nombre": "PlayStation",
+        "fabricante": "Sony"
     }
 },
 {
-    "model": "examen_AntonioR.marca",
-    "pk": 37,
+    "model": "examen_AntonioR.plataforma",
+    "pk": 2,
     "fields": {
-        "nombre": "Bernarda Fernández Carmona S.L."
+        "nombre": "Switch",
+        "fabricante": "Nintendo"
     }
 },
 {
-    "model": "examen_AntonioR.marca",
-    "pk": 38,
+    "model": "examen_AntonioR.videojuego",
+    "pk": 1,
     "fields": {
-        "nombre": "Grupo Torrijos S.L.N.E"
+        "titulo": "gta",
+        "estudio_desarrollo": 1,
+        "ventas_estimadas": 32
     }
 },
 {
-    "model": "examen_AntonioR.marca",
-    "pk": 39,
+    "model": "examen_AntonioR.videojuego",
+    "pk": 2,
     "fields": {
-        "nombre": "Cabrero y asociados S.Coop."
+        "titulo": "Fantasy",
+        "estudio_desarrollo": 2,
+        "ventas_estimadas": 35
     }
 },
 {
-    "model": "examen_AntonioR.marca",
-    "pk": 40,
+    "model": "examen_AntonioR.videojuego",
+    "pk": 3,
     "fields": {
-        "nombre": "Infraestructuras Crespo S.L."
+        "titulo": "Rocket",
+        "estudio_desarrollo": 3,
+        "ventas_estimadas": 20
     }
 },
 {
-    "model": "examen_AntonioR.movil",
-    "pk": 36,
+    "model": "examen_AntonioR.estudio",
+    "pk": 1,
     "fields": {
-        "modelo": "Pacientes",
-        "precio": "728.02",
-        "stock": 1,
-        "marca": 37
+        "nombre": "Rockstar"
     }
 },
 {
-    "model": "examen_AntonioR.movil",
-    "pk": 37,
+    "model": "examen_AntonioR.estudio",
+    "pk": 2,
     "fields": {
-        "modelo": "Mientras",
-        "precio": "988.76",
-        "stock": 45,
-        "marca": 39
+        "nombre": "Sega"
     }
 },
 {
-    "model": "examen_AntonioR.movil",
-    "pk": 38,
+    "model": "examen_AntonioR.estudio",
+    "pk": 3,
     "fields": {
-        "modelo": "Flores",
-        "precio": "769.51",
-        "stock": 43,
-        "marca": 38
+        "nombre": "Epic Games"
     }
 },
 {
-    "model": "examen_AntonioR.movil",
-    "pk": 39,
+    "model": "examen_AntonioR.sede",
+    "pk": 1,
     "fields": {
-        "modelo": "Veces",
-        "precio": "124.31",
-        "stock": 30,
-        "marca": 40
+        "estudio": 1,
+        "pais": "Estados Unidos"
     }
 },
 {
-    "model": "examen_AntonioR.movil",
-    "pk": 40,
+    "model": "examen_AntonioR.sede",
+    "pk": 2,
     "fields": {
-        "modelo": "Año",
-        "precio": "341.31",
-        "stock": 17,
-        "marca": 36
+        "estudio": 2,
+        "pais": "España"
     }
 },
 {
-    "model": "examen_AntonioR.movil",
-    "pk": 41,
+    "model": "examen_AntonioR.sede",
+    "pk": 3,
     "fields": {
-        "modelo": "Todos",
-        "precio": "1038.03",
-        "stock": 39,
-        "marca": 38
+        "estudio": 2,
+        "pais": "Estados Unidos"
     }
 },
 {
-    "model": "examen_AntonioR.movil",
-    "pk": 42,
+    "model": "examen_AntonioR.videojuegoplataformas",
+    "pk": 1,
     "fields": {
-        "modelo": "Comenzó",
-        "precio": "392.85",
-        "stock": 7,
-        "marca": 39
+        "videojuego": 2,
+        "plataforma": 1
     }
 },
 {
-    "model": "examen_AntonioR.movil",
-    "pk": 43,
+    "model": "examen_AntonioR.videojuegoplataformas",
+    "pk": 2,
     "fields": {
-        "modelo": "Unidos",
-        "precio": "851.68",
-        "stock": 19,
-        "marca": 40
+        "videojuego": 2,
+        "plataforma": 2
     }
 },
 {
-    "model": "examen_AntonioR.movil",
-    "pk": 44,
+    "model": "examen_AntonioR.analisis",
+    "pk": 1,
     "fields": {
-        "modelo": "Televisión",
-        "precio": "189.54",
-        "stock": 28,
-        "marca": 36
+        "videojuego": 1,
+        "puntuacion": 92,
+        "review": "Juegazo",
+        "anyo_publicacion": "2025-11-04"
     }
 },
 {
-    "model": "examen_AntonioR.movil",
-    "pk": 45,
+    "model": "examen_AntonioR.analisis",
+    "pk": 2,
     "fields": {
-        "modelo": "Hechos",
-        "precio": "968.44",
-        "stock": 1,
-        "marca": 37
+        "videojuego": 2,
+        "puntuacion": 90,
+        "review": "bien",
+        "anyo_publicacion": "2025-11-04"
     }
 },
 {
-    "model": "examen_AntonioR.movil",
-    "pk": 46,
+    "model": "examen_AntonioR.analisis",
+    "pk": 3,
     "fields": {
-        "modelo": "Fuentes",
-        "precio": "504.15",
-        "stock": 40,
-        "marca": 38
-    }
-},
-{
-    "model": "examen_AntonioR.movil",
-    "pk": 47,
-    "fields": {
-        "modelo": "Comunicación",
-        "precio": "104.02",
-        "stock": 3,
-        "marca": 40
-    }
-},
-{
-    "model": "examen_AntonioR.movil",
-    "pk": 48,
-    "fields": {
-        "modelo": "Grado",
-        "precio": "654.46",
-        "stock": 23,
-        "marca": 36
-    }
-},
-{
-    "model": "examen_AntonioR.movil",
-    "pk": 49,
-    "fields": {
-        "modelo": "Crecimiento",
-        "precio": "163.98",
-        "stock": 44,
-        "marca": 36
-    }
-},
-{
-    "model": "examen_AntonioR.movil",
-    "pk": 50,
-    "fields": {
-        "modelo": "Libro",
-        "precio": "591.54",
-        "stock": 8,
-        "marca": 36
-    }
-},
-{
-    "model": "examen_AntonioR.banco",
-    "pk": 36,
-    "fields": {
-        "numero_cuenta": "ES4337547233455157316437",
-        "nombre": "Caixa"
-    }
-},
-{
-    "model": "examen_AntonioR.banco",
-    "pk": 37,
-    "fields": {
-        "numero_cuenta": "ES3210487503155904202918",
-        "nombre": "Caixa"
-    }
-},
-{
-    "model": "examen_AntonioR.banco",
-    "pk": 38,
-    "fields": {
-        "numero_cuenta": "ES1423219649372625429518",
-        "nombre": "Caixa"
-    }
-},
-{
-    "model": "examen_AntonioR.banco",
-    "pk": 39,
-    "fields": {
-        "numero_cuenta": "ES3168743765523642326408",
-        "nombre": "ING"
-    }
-},
-{
-    "model": "examen_AntonioR.banco",
-    "pk": 40,
-    "fields": {
-        "numero_cuenta": "ES4261199701124815252828",
-        "nombre": "UNICAJA"
-    }
-},
-{
-    "model": "examen_AntonioR.banco",
-    "pk": 41,
-    "fields": {
-        "numero_cuenta": "ES3702582189756245213779",
-        "nombre": "BBVA"
-    }
-},
-{
-    "model": "examen_AntonioR.banco",
-    "pk": 42,
-    "fields": {
-        "numero_cuenta": "ES9728261812805860907953",
-        "nombre": "ING"
-    }
-},
-{
-    "model": "examen_AntonioR.banco",
-    "pk": 43,
-    "fields": {
-        "numero_cuenta": "ES4083742356188454676831",
-        "nombre": "Caixa"
-    }
-},
-{
-    "model": "examen_AntonioR.banco",
-    "pk": 44,
-    "fields": {
-        "numero_cuenta": "ES3682709250579065535001",
-        "nombre": "ING"
-    }
-},
-{
-    "model": "examen_AntonioR.banco",
-    "pk": 45,
-    "fields": {
-        "numero_cuenta": "ES3047206877856676799638",
-        "nombre": "Caixa"
-    }
-},
-{
-    "model": "examen_AntonioR.cliente",
-    "pk": 19,
-    "fields": {
-        "nombre": "Reyes de Sans",
-        "email": "lara34@example.net",
-        "banco": 36
-    }
-},
-{
-    "model": "examen_AntonioR.cliente",
-    "pk": 20,
-    "fields": {
-        "nombre": "Paulina Rojas",
-        "email": "manzanoreyna@example.com",
-        "banco": 37
-    }
-},
-{
-    "model": "examen_AntonioR.cliente",
-    "pk": 21,
-    "fields": {
-        "nombre": "Reyna Salmerón Villalba",
-        "email": "fabio82@example.net",
-        "banco": 38
-    }
-},
-{
-    "model": "examen_AntonioR.cliente",
-    "pk": 22,
-    "fields": {
-        "nombre": "Flor Cordero",
-        "email": "parragodofredo@example.com",
-        "banco": 39
-    }
-},
-{
-    "model": "examen_AntonioR.cliente",
-    "pk": 23,
-    "fields": {
-        "nombre": "Violeta Aguilar Alcolea",
-        "email": "urrutiadorita@example.com",
-        "banco": 40
-    }
-},
-{
-    "model": "examen_AntonioR.cliente",
-    "pk": 24,
-    "fields": {
-        "nombre": "Marianela Zamorano Batalla",
-        "email": "georginaguitart@example.org",
-        "banco": 41
-    }
-},
-{
-    "model": "examen_AntonioR.cliente",
-    "pk": 25,
-    "fields": {
-        "nombre": "Fanny Arcelia Saura Orozco",
-        "email": "segismundopomares@example.net",
-        "banco": 42
-    }
-},
-{
-    "model": "examen_AntonioR.cliente",
-    "pk": 26,
-    "fields": {
-        "nombre": "Aureliano Sanz Cabello",
-        "email": "carla45@example.net",
-        "banco": 43
-    }
-},
-{
-    "model": "examen_AntonioR.cliente",
-    "pk": 27,
-    "fields": {
-        "nombre": "Angelina Hervás Alsina",
-        "email": "diegorosa@example.org",
-        "banco": 44
-    }
-},
-{
-    "model": "examen_AntonioR.cliente",
-    "pk": 28,
-    "fields": {
-        "nombre": "Nilo García Jódar",
-        "email": "xcheca@example.com",
-        "banco": 45
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 19,
-    "fields": {
-        "cliente": 19,
-        "movil": 41,
-        "puntuacion": 1,
-        "comentario": "Tuvo rafael educación papel región país mediante.",
-        "fecha_votacion": "2025-11-02T21:36:26.937"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 20,
-    "fields": {
-        "cliente": 19,
-        "movil": 49,
-        "puntuacion": 1,
-        "comentario": "Hacer varios ciudad ahí ideas investigación las.",
-        "fecha_votacion": "2025-11-02T21:36:26.995"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 21,
-    "fields": {
-        "cliente": 19,
-        "movil": 50,
-        "puntuacion": 4,
-        "comentario": "Valor vida cambios vía tema saber dos.",
-        "fecha_votacion": "2025-11-02T21:36:27.054"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 22,
-    "fields": {
-        "cliente": 20,
-        "movil": 43,
-        "puntuacion": 4,
-        "comentario": "Reunión objeto punto españa él.",
-        "fecha_votacion": "2025-11-02T21:36:27.112"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 23,
-    "fields": {
-        "cliente": 20,
-        "movil": 48,
-        "puntuacion": 4,
-        "comentario": "Profesional producción largo pequeño señor ley final bastante mano pablo.",
-        "fecha_votacion": "2025-11-02T21:36:27.170"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 24,
-    "fields": {
-        "cliente": 21,
-        "movil": 43,
-        "puntuacion": 4,
-        "comentario": "Evitar sol has desarrollo diversas carácter fernando.",
-        "fecha_votacion": "2025-11-02T21:36:27.229"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 25,
-    "fields": {
-        "cliente": 21,
-        "movil": 42,
-        "puntuacion": 5,
-        "comentario": "Antes gente luz pie resultado padres crecimiento carrera cosa.",
-        "fecha_votacion": "2025-11-02T21:36:27.304"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 26,
-    "fields": {
-        "cliente": 22,
-        "movil": 47,
-        "puntuacion": 2,
-        "comentario": "Miedo comisión llegó peso habían orden situación partido guerra.",
-        "fecha_votacion": "2025-11-02T21:36:27.362"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 27,
-    "fields": {
-        "cliente": 22,
-        "movil": 43,
-        "puntuacion": 2,
-        "comentario": "Cuenta música servicios u plaza nadie.",
-        "fecha_votacion": "2025-11-02T21:36:27.487"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 28,
-    "fields": {
-        "cliente": 22,
-        "movil": 45,
-        "puntuacion": 2,
-        "comentario": "Deben alta destino blanca realizar g nuevos elementos orden.",
-        "fecha_votacion": "2025-11-02T21:36:27.571"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 29,
-    "fields": {
-        "cliente": 23,
-        "movil": 47,
-        "puntuacion": 5,
-        "comentario": "Militares industria constitución existen juego da queda han sistemas santa.",
-        "fecha_votacion": "2025-11-02T21:36:27.635"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 30,
-    "fields": {
-        "cliente": 24,
-        "movil": 46,
-        "puntuacion": 2,
-        "comentario": "Sé propuesta región finalmente claro comunidad hicieron lo debía crisis.",
-        "fecha_votacion": "2025-11-02T21:36:27.735"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 31,
-    "fields": {
-        "cliente": 25,
-        "movil": 49,
-        "puntuacion": 5,
-        "comentario": "Vivir situación problemas dice algunos mucha podrá.",
-        "fecha_votacion": "2025-11-02T21:36:27.802"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 32,
-    "fields": {
-        "cliente": 26,
-        "movil": 49,
-        "puntuacion": 5,
-        "comentario": "Muchas pensar éste comisión.",
-        "fecha_votacion": "2025-11-02T21:36:27.977"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 33,
-    "fields": {
-        "cliente": 26,
-        "movil": 46,
-        "puntuacion": 2,
-        "comentario": "Plan sector horas autoridades teoría cabeza instituciones explicó.",
-        "fecha_votacion": "2025-11-02T21:36:28.043"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 34,
-    "fields": {
-        "cliente": 27,
-        "movil": 39,
-        "puntuacion": 2,
-        "comentario": "Única presenta igual diversas silencio familia película sé propuesta conjunto amigo.",
-        "fecha_votacion": "2025-11-02T21:36:28.110"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 35,
-    "fields": {
-        "cliente": 27,
-        "movil": 38,
-        "puntuacion": 5,
-        "comentario": "Un otra padre manera productos.",
-        "fecha_votacion": "2025-11-02T21:36:28.176"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 36,
-    "fields": {
-        "cliente": 27,
-        "movil": 41,
-        "puntuacion": 2,
-        "comentario": "Pueblo resto reunión democracia niño población.",
-        "fecha_votacion": "2025-11-02T21:36:28.335"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 37,
-    "fields": {
-        "cliente": 28,
-        "movil": 50,
-        "puntuacion": 3,
-        "comentario": "Líder bueno julio mujeres dios miedo gracias sobre la ellas.",
-        "fecha_votacion": "2025-11-02T21:36:28.427"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 38,
-    "fields": {
-        "cliente": 28,
-        "movil": 42,
-        "puntuacion": 5,
-        "comentario": "Propia entre b experiencia líder trata llegar luego.",
-        "fecha_votacion": "2025-11-02T21:36:28.496"
-    }
-},
-{
-    "model": "examen_AntonioR.votaciones",
-    "pk": 39,
-    "fields": {
-        "cliente": 28,
-        "movil": 37,
-        "puntuacion": 1,
-        "comentario": "Sea dirección dos francisco costa miguel.",
-        "fecha_votacion": "2025-11-02T21:36:28.604"
+        "videojuego": 3,
+        "puntuacion": 67,
+        "review": "mal juego",
+        "anyo_publicacion": "2025-11-04"
     }
 }
 ]
