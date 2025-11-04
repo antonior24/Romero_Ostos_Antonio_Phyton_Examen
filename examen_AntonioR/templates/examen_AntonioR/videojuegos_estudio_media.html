@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Videojuegos de un estudio con media de puntuación</h1>
+    <ul>
+        {% for videojuego in videojuegos %}
+            <h2>{{ videojuego.titulo }}</h2>
+            <li>Media de puntuación: {{ videojuego.media_puntuacion }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -211,6 +211,19 @@ def analisis_estudio(request, estudio_id):
 
     return render(request, 'examen_AntonioR/analisis_estudio.html', {'analisis': analisis})
 
+# Crea los Modelos, Urls y QuerySets correspondientes, para que puedas obtener todos los videojuegos de un estudio de desarrollo en concreto que tengan una 
+# media de puntuación de análisis mayor que 7.5.
+def videojuegos_estudio_media(request, estudio_id):
+    videojuegos = (
+        Videojuego.objects
+        .filter(estudio_desarrollo_id=estudio_id)
+        .annotate(media_puntuacion=Avg('analisis_videojuego__puntuacion'))
+        .filter(media_puntuacion__gt=7.5)
+        .all()
+    )
+
+    return render(request, 'examen_AntonioR/videojuegos_estudio_media.html', {'videojuegos': videojuegos})
+
 
 
 def mi_error_404(request, exception=None):

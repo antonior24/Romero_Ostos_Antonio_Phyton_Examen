@@ -18,4 +18,5 @@ urlpatterns = [
     path('buscar_fabricante/', views.buscar_fabricante, name='buscar_fabricante'),
     path('videojuegos_sin_plataforma/', views.videojuegos_sin_plataforma, name='videojuegos_sin_plataforma'),
     path('analisis_estudio/<int:estudio_id>/', views.analisis_estudio, name='analisis_estudio'),
+    path('videojuegos_estudio_media/<int:estudio_id>/', views.videojuegos_estudio_media, name='videojuegos_estudio_media'),
 ]
